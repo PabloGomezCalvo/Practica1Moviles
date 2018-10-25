@@ -1,5 +1,4 @@
 package es.ucm.gdv.pc;
-import java.awt.*;
 import es.ucm.gdv.interfaces.Image;
 
 public class ImagePC implements Image {
