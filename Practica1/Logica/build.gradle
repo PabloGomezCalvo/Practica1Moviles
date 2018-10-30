@@ -5,5 +5,5 @@ dependencies {
     implementation project(':Interfaces')
 }
 
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+sourceCompatibility = "7"
+targetCompatibility = "7"

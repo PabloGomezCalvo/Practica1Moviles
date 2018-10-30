@@ -1,6 +1,8 @@
 package es.ucm.gdv.pc;
 import es.ucm.gdv.interfaces.Graphics;
 import es.ucm.gdv.interfaces.Image;
+
+import java.awt.Color;
 import java.io.*;
 
 public class GraphicsPC implements Graphics{
@@ -23,7 +25,8 @@ public class GraphicsPC implements Graphics{
         return image;
     }
     public void clear(int color){
-
+        _g.setColor(new Color(color));
+        _g.fillRect(0, 0, getWidth(), getHeight());
     }
     public void drawImage(Image image,int x, int y){//dibuja en la pos x e y la imagen dada
         _g.drawImage((java.awt.image.BufferedImage)image,x,y,null);

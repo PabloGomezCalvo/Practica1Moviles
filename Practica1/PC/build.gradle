@@ -3,6 +3,7 @@ apply plugin: 'java-library'
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':Interfaces')
+    implementation project(':Logica')
 }
 
 sourceCompatibility = "1.7"

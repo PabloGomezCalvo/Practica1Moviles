@@ -8,8 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Android" />
             <option value="$PROJECT_DIR$/Interfaces" />
+            <option value="$PROJECT_DIR$/Logica" />
             <option value="$PROJECT_DIR$/PC" />
             <option value="$PROJECT_DIR$/app" />
           </set>
