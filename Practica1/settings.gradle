@@ -1,1 +1,1 @@
-include ':app', ':Interfaces', ':PC', ':Logica'
+include ':app', ':Interfaces', ':PC', ':Logica', ':Android', ':MainPC'

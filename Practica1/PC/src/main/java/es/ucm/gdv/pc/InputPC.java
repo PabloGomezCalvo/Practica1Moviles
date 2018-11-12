@@ -5,11 +5,8 @@ import java.util.List;
 import es.ucm.gdv.interfaces.Input;
 
 public class InputPC implements Input {
-    public static class TouchEvent{
-
-    }
-    List<Input.TouchEvent> getTouchEvents(){
-
+    @Override
+    public List<TouchEvent> getTouchEvents() {
         return null;
     }
 }
