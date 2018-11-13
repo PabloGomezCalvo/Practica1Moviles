@@ -1,8 +1,8 @@
-package com.example.logica;
+package com.example.logica.Entities;
 
 import es.ucm.gdv.interfaces.Image;
 
-public class Tower {
+public class Tower extends Entity{
     public Tower(Image image, int salud, int x,int y){
         _salud = salud;
         _image = image;
@@ -18,21 +18,11 @@ public class Tower {
         return _salud;
     }
 
-
-    public int get_posx() {
-        return _posx;
-    }
-
-    public int get_posy() {
-        return _posy;
-    }
-
-    public Image get_image() {
+    public Image getImage() {
         return _image;
     }
 
-    private Image _image;
-    private int _posx;
-    private int _posy;
+    public void update(){}
+
     private int _salud;
 }

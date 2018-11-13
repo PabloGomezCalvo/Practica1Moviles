@@ -1,4 +1,4 @@
-package com.example.logica;
+package com.example.logica.States;
 
 import es.ucm.gdv.interfaces.GameState;
 

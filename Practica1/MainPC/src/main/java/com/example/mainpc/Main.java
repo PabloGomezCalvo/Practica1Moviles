@@ -1,6 +1,6 @@
 package com.example.mainpc;
 
-import com.example.logica.GameStateLogic;
+import com.example.logica.States.GameStateLogic;
 import es.ucm.gdv.pc.GamePC;
 
 public class Main {
