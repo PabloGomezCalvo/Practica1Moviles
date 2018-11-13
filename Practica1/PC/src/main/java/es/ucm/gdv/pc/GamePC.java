@@ -1,17 +1,11 @@
 package es.ucm.gdv.pc;
 
-import javax.swing.*;
 import es.ucm.gdv.interfaces.Game;
 import es.ucm.gdv.interfaces.GameState;
 
-public class GamePC  extends JFrame implements Game{
+public class GamePC  implements Game{
     public GamePC(GameState gameState){
-        super("GamePC");
-        setSize(800,600);
-        setIgnoreRepaint(true);
-        setVisible(true);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        _ventana = new Ventana(800,600);
         _gameState = gameState;
         _graphics = new GraphicsPC(800,600);
         _input = null;
@@ -24,7 +18,7 @@ public class GamePC  extends JFrame implements Game{
 
             _gameState.Tick();
 
-            g = getGraphics();
+            g = _ventana.getGraphics();
 
             _graphics.actualizaGraphics(g);
             _gameState.Render();
@@ -45,5 +39,5 @@ public class GamePC  extends JFrame implements Game{
     private GraphicsPC _graphics;
     private InputPC _input;
     private GameState _gameState;
-
+    private Ventana _ventana;
 }
