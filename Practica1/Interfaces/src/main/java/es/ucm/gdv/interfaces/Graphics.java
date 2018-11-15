@@ -6,4 +6,5 @@ public interface Graphics {
     public void drawImage(Image image,int x, int y);
     public int getWidth();
     public int getHeight();
+    public void present();
 }

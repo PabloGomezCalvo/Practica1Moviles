@@ -7,23 +7,19 @@ public class GamePC  implements Game{
     public GamePC(GameState gameState){
         _ventana = new Ventana(800,600);
         _gameState = gameState;
-        _graphics = new GraphicsPC(800,600);
+        _graphics = new GraphicsPC(800,600,_ventana);
         _input = null;
     }
 
     public void run(){
-        java.awt.Graphics g;
-
+        _graphics.initGraphics();
         while(true){
 
             _gameState.Tick();
 
-            g = _ventana.getGraphics();
-
-            _graphics.actualizaGraphics(g);
             _gameState.Render();
-            if(g != null)
-                g.dispose();
+
+            _graphics.present();
 
         }
 

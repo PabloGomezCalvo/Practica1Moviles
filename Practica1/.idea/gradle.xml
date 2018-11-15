@@ -8,12 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Android" />
             <option value="$PROJECT_DIR$/Interfaces" />
             <option value="$PROJECT_DIR$/Logica" />
             <option value="$PROJECT_DIR$/MainPC" />
             <option value="$PROJECT_DIR$/PC" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/android" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
