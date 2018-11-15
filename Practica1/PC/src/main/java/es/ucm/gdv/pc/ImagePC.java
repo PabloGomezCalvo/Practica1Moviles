@@ -11,5 +11,6 @@ public class ImagePC implements Image {
     public int getHeight(){
         return _image.getHeight();
     }
+    public java.awt.image.BufferedImage getAwtImage(){return _image;}
     java.awt.image.BufferedImage _image;
 }

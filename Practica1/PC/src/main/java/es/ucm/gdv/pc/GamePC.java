@@ -8,7 +8,7 @@ public class GamePC  implements Game{
         _ventana = new Ventana(800,600);
         _gameState = gameState;
         _graphics = new GraphicsPC(800,600,_ventana);
-        _input = null;
+        _input = new InputPC(_ventana);
     }
 
     public void run(){

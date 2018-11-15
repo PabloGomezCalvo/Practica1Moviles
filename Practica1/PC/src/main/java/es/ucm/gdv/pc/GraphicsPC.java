@@ -1,6 +1,7 @@
 package es.ucm.gdv.pc;
 import es.ucm.gdv.interfaces.Graphics;
 import es.ucm.gdv.interfaces.Image;
+import es.ucm.gdv.interfaces.Rect;
 
 import java.awt.Color;
 import java.io.*;
@@ -32,8 +33,12 @@ public class GraphicsPC implements Graphics{
         _g.setColor(new Color(color));
         _g.fillRect(0, 0, getWidth(), getHeight());
     }
-    public void drawImage(Image image,int x, int y){//dibuja en la pos x e y la imagen dada
-        _g.drawImage((java.awt.image.BufferedImage)image,x,y,null);
+    public void drawImage(Image image,Rect x, Rect y){//dibuja en la pos x e y la imagen dada
+
+        _g.drawImage(((ImagePC)image).getAwtImage(),
+                x.get_x(),x.get_y(),x.get_width()+x.get_x(),x.get_height()+x.get_y(),
+                y.get_x(),y.get_y(),y.get_width()+y.get_x(),y.get_height()+y.get_y(),
+                null);
     }
     public void present(){
         _g = _ventana.getGraphics();
