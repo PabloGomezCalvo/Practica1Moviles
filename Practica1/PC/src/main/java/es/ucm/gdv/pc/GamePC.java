@@ -25,7 +25,7 @@ public class GamePC  implements Game{
 
     }
 
-    public GraphicsPC getMyGraphics (){
+    public GraphicsPC getGraphics (){
         return _graphics;
     }
     public InputPC getInput(){
